@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="text-white bg-gradient-to-r from-[#0f0f0f] to-[#323232] p-4">
+      <nav className="fixed top-0 left-0 w-full z-50 text-white bg-gradient-to-r from-[#0f0f0f] to-[#323232] p-4">
         <div>
           <div className="flex items-center justify-between w-full max-w-6xl mx-auto">
             {/* Logo */}
@@ -26,7 +26,7 @@ const Navbar = () => {
             </h1>
 
             {/* Menu */}
-            <div className="hidden md:flex gap-6 text-lg font-bold">
+            <div className="hidden md:flex gap-6 text-lg items-center  font-bold">
               {navItems.map((item, index) => (
                 <li
                   key={index}
@@ -51,7 +51,7 @@ const Navbar = () => {
                 {[FaInstagram, FaYoutube, FaFacebook].map((Icon, index) => (
                   <Icon
                     key={index}
-                    className="text-xl cursor-pointer hover:scale-110 transition-transform duration-300"
+                    className="text-2xl cursor-pointer hover:scale-110 transition-transform duration-300"
                   />
                 ))}
               </div>
